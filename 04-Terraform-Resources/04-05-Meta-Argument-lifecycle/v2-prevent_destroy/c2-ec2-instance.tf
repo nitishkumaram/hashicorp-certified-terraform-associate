@@ -6,6 +6,6 @@ resource "aws_instance" "web" {
     "Name" = "web-2"
   }
   lifecycle {
-    create_before_destroy = true
+    prevent_destroy = true
   }
 }
